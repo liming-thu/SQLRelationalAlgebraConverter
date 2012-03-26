@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0078)http://msdn.microsoft.com/en-us/library/windows/desktop/ms711725(v=vs.85).aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="Head" xmlns="http://www.w3.org/1999/xhtml"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./SQL-Minimum-Grammar_files/Combined.css" xmlns="http://www.w3.org/1999/xhtml"><title>SQL Minimum Grammar</title><meta name="DCS.dcsuri" content="/en-us/library/windows/desktop/ms711725(d=default,l=en-us,v=vs.85).aspx"><meta name="NormalizedUrl" content="http://msdn.microsoft.com/en-us/library/windows/desktop/ms711725(d=default,l=en-us,v=vs.85).aspx"><meta name="VotingContextUrl" content="http://msdn.microsoft.com/en-us/library/windows/desktop/ms711725(d=default,l=en-us,v=vs.85).aspx"><meta name="MN" content="6AD9FDD7-11:36:47 PM"><meta name="Search.ShortId" content="ms711725"><meta name="Ms.Locale" content="en-us"><meta http-equiv="X-UA-Compatible" content="IE=9"><script type="text/javascript" async="" src="./SQL-Minimum-Grammar_files/ms2.js"></script><script src="./SQL-Minimum-Grammar_files/jquery-1.7.1.min.js" type="text/javascript" xml:space="preserve"></script><link rel="canonical" href="./SQL-Minimum-Grammar_files/SQL-Minimum-Grammar.htm" xmlns="http://www.w3.org/1999/xhtml"><link rel="alternate" media="print" href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms711725(d=printer,v=vs.85).aspx" type="text/html" xmlns="http://www.w3.org/1999/xhtml"></head>
+<body>
+    <div class="MetricsContainer">
+        <div class="WebtrendsContainer">
+            
+
+<script type="text/javascript" language="javascript">
+//<![CDATA[
+  var literalNormalizedUrl = '/en-us/library/windows/desktop/ms711725(d=default,l=en-us,v=vs.85).aspx';
+  var wt_nvr_ru = 'WT_NVR_RU';
+  var wt_fpcdom = '.microsoft.com';
+  var wt_domlist = 'msdn.microsoft.com';
+  var wt_pathlist = '';
+  var wt_paramlist = 'DCSext.mtps_devcenter';
+  var wt_siteid = 'MSDN';
+  var gDomain = 'm.webtrends.com';
+  var gDcsId = 'dcsmgru7m99k7mqmgrhudo0k8_8c6m';
+  var gFpc = 'WT_FPC';
+  if (document.cookie.indexOf(gFpc + "=") == -1) {
+    document.write("<scr" + "ipt type='text/javascript' src='" + "http" + (window.location.protocol.indexOf('https:') == 0 ? 's' : '') + "://" + gDomain + "/" + gDcsId + "/wtid.js" + "'><\\/scr" + "ipt>");
+  }
+  var detectedLocale = 'en-us';
+  var wtsp = '_msdn_';
+  var gTrackEvents = '0';
+/*]]>*/
+</script>
+<noscript>&lt;div&gt;&lt;img alt="DCSIMG" id="Img1" width="1" height="1" src="http://m.webtrends.com/dcsmgru7m99k7mqmgrhudo0k8_8c6m/njs.gif?dcsuri=/nojavascript&amp;amp;WT.js=No" /&gt;&lt;/div&gt;</noscript>
+
+</div>
+        <div class="OmnitureContainer">
+            
+
+
+
+<script type="text/javascript">
+  var omni_guid = 'f6b664a1-96c0-462f-b974-71e3cc945e2e'; 
+</script>
+
+
+
+<noscript>
+    &lt;a href="http://www.omniture.com" title="Web Analytics"&gt;
+        &lt;img src="//msstonojsmsdn.112.2o7.net/b/ss/msstonojsmsdn/1/H.20.2--NS/0" height="1" width="1" border="0" alt="" /&gt;&lt;/a&gt;
+</noscript>
+
+</div>
+    </div>
+    <script language="javascript" type="text/javascript" src="./SQL-Minimum-Grammar_files/broker.js"></script>
+    <div class="pageContainer">        
+        <div class="headerContainer">
+            
+<div class="header">
+    
+<div class="GlobalBar">
+  <div class="PassportScarab">
+    
+    <a id="idPPScarab" class="scarabLink" href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=11&ct=1332805007&rver=6.0.5276.0&wp=MCLBI&wlcxt=msdn%24msdn%24msdn&wreply=http%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibrary%2fwindows%2fdesktop%2fms711725%2528v%3dvs.85%2529.aspx&lc=1033&id=254354&mkt=en-US"><span id="idPPScarabSIT">Sign in</span></a>
+  </div>
+</div>
+
+    <div class="Clear"></div>
+    
+<div class="Search">
+    <div class="SearchBox">
+      <form id="HeaderSearchForm" method="get" action="http://social.msdn.microsoft.com/search/en-us/windows/desktop" onsubmit="return SearchBoxOnSubmit(&#39;Search Dev Center with Bing&#39;);">
+        <input name="query" id="HeaderSearchTextBox" class="TextBoxSearchLoaded" type="text" value="Search Dev Center with Bing" maxlength="100" title="Search Dev Center with Bing" onfocus="WatermarkFocus(this, &#39;Search Dev Center with Bing&#39;, &#39;TextBoxSearch&#39;)" onblur="WatermarkBlur(this, &#39;Search Dev Center with Bing&#39;, &#39;TextBoxSearchLoaded&#39;)">
+        <input name="Refinement" type="hidden" value="181">
+        <input id="HeaderSearchButton" value="" class="SearchButton" type="submit" title="Search">
+        <input id="HeaderSearchButtonHidden" value="" style="display:none;" type="submit">       
+      </form>
+    </div>
+</div>
+
+    <div class="siteLogo">
+      <a href="http://msdn.microsoft.com/en-us/windows/desktop" title="Dev Center -  Desktop">
+        <img src="./SQL-Minimum-Grammar_files/6b67f1378af22a94e4336f5bfdd136bd.png" alt="Dev Center -  Desktop" title="Dev Center -  Desktop">
+        <span>Dev Center - &nbsp;Desktop</span>
+      </a>
+    </div>
+    <div class="tabs">
+      <a href="http://msdn.microsoft.com/en-us/windows/desktop" title="Home">Home</a><a href="https://sysdev.microsoft.com/en-us/desktop" title="Dashboard">Dashboard</a><a class="highlightedTab" href="http://msdn.microsoft.com/en-us/library/windows/desktop" title="Learn">Learn</a><a href="http://code.msdn.microsoft.com/en-us/windowsdesktop" title="Samples">Samples</a><a href="http://msdn.microsoft.com/en-us/windows/desktop/aa904949" title="Downloads">Downloads</a><a href="http://msdn.microsoft.com/en-us/windows/desktop/aa904945" title="Community">Community</a>
+    </div>
+    <div class="masthead_hr"></div>
+</div>
+
+        </div>        
+        <div class="breadcrumbContainer">
+            
+<div class="breadCrumb">
+   <a class="breadCrumbEyebrowLink" href="http://msdn.microsoft.com/en-us/windows/desktop/" title="Dev Center - Desktop">Dev Center - Desktop</a> <span><span class="breadCrumbEyebrowSeperator">&gt;</span> <a class="breadCrumbEyebrowLink" href="http://msdn.microsoft.com/en-us/library/windows/desktop/" title="Learn">Learn</a></span> <span><span class="breadCrumbEyebrowSeperator">&gt;</span> <a class="breadCrumbEyebrowLink" href="http://msdn.microsoft.com/en-us/library/windows/desktop/hh447209(v=vs.85).aspx" title="Reference">Reference</a></span> <span><span class="breadCrumbEyebrowSeperator">&gt;</span> <a class="breadCrumbEyebrowLink" href="http://msdn.microsoft.com/en-us/library/windows/desktop/ee663264(v=vs.85).aspx" title="Data Access and Storage">Data Access and Storage</a></span> <span><span class="breadCrumbEyebrowSeperator">&gt;</span> <a class="breadCrumbEyebrowLink" href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa968814(v=vs.85).aspx" title="Windows Data Access Components">Windows Data Access Components</a></span> <span><span class="breadCrumbEyebrowSeperator">&gt;</span> <a class="breadCrumbEyebrowLink" href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms710252(v=vs.85).aspx" title="Microsoft Open Database Connectivity (ODBC)">Microsoft Open Database Connectivity (ODBC)</a></span> <span><span class="breadCrumbEyebrowSeperator">&gt;</span> <a class="breadCrumbEyebrowLink" href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms714177(v=vs.85).aspx" title="ODBC Programmer&#39;s Reference">ODBC Programmer's Reference</a></span> <span><span class="breadCrumbEyebrowSeperator">&gt;</span> <a class="breadCrumbEyebrowLink" href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms710927(v=vs.85).aspx" title="ODBC Appendixes">ODBC Appendixes</a></span> <span><span class="breadCrumbEyebrowSeperator">&gt;</span> <a class="breadCrumbEyebrowLink" href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms709391(v=vs.85).aspx" title="Appendix C: SQL Grammar">Appendix C: SQL Grammar</a></span> <span><span class="breadCrumbEyebrowSeperator">&gt;</span> <a class="breadCrumbEyebrowLink" href="./SQL-Minimum-Grammar_files/SQL-Minimum-Grammar.htm" title="SQL Minimum Grammar">SQL Minimum Grammar</a></span>
+</div>
+
+        </div>        
+        <h1 id="TopicTitle">
+          SQL Minimum Grammar
+        </h1>
+        <div id="Navigation" class="navigationContainer" style="width:190px">
+          
+<div class="navigation">
+<div><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms713534(v=vs.85).aspx" title="Elements Used in SQL Statements">Elements Used in SQL Statements</a></div><div><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms712598(v=vs.85).aspx" title="Data Type Support">Data Type Support</a></div><div><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms716525(v=vs.85).aspx" title="Parameter Data Types">Parameter Data Types</a></div><div><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms709310(v=vs.85).aspx" title="Parameter Markers">Parameter Markers</a></div>
+</div>
+
+        </div>        
+        <div class="tocResizeContainer">
+            
+    <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms711725(v=vs.85).aspx#" onclick="onIncreaseToc()" class="tocResize" id="TocResize" style="left:193px;">
+    <img id="ResizeImageIncrease" class="nav_resize_open" src="./SQL-Minimum-Grammar_files/5b56267bbca66252c725ca7ab4fdea87.png" onmousedown="onIncreaseToc()" title="Expand" alt="Expand">
+    <img id="ResizeImageReset" class="nav_resize_close" src="./SQL-Minimum-Grammar_files/5b56267bbca66252c725ca7ab4fdea87.png" style="display:none" onmousedown="onResetToc()" title="Minimize" alt="Minimize">
+  
+</a>
+<input type="hidden" id="hidTocDirection" value="ltr">
+
+        </div>        
+        <div class="contentWrapper">
+          <div class="contentHeaderContainer">
+            
+            
+            
+
+
+
+
+<div id="ratingCounter">
+    <span id="rcA" class="ratingText">
+        2 out of 2 rated this helpful <a id="rateThisTopic" href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms711725(v=vs.85).aspx#feedback" title="Rate this topic">Rate this topic</a>
+        
+    </span>
+</div>
+
+            
+          </div>
+          <div class="topicContainer">
+              
+<div class="topic" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="majorTitle">
+    
+  </div>
+  <h1 class="title">SQL Minimum Grammar</h1>
+  
+  <div id="mainSection">
+    <div id="mainBody">
+      <div class="introduction">
+        <p>This section describes the minimum SQL syntax that an ODBC driver must support. The syntax described in this section is a subset of the Entry level syntax of SQL-92. </p>
+        <p>An application can use any of the syntax in this section and be assured that any ODBC-compliant driver will support that syntax. To determine whether additional features of SQL-92 not in this section are supported, the application should call <strong>SQLGetInfo</strong> with the SQL_SQL_CONFORMANCE information type. Even if the driver does not conform to any SQL-92 conformance level, an application can still use the syntax described in this section. If a driver conforms to an SQL-92 level, on the other hand, it supports all syntax included in that level. This includes the syntax in this section because the minimum grammar described here is a pure subset of the lowest SQL-92 conformance level. Once the application knows the SQL-92 level supported, it can determine whether a higher-level feature is supported (if any) by calling <strong>SQLGetInfo</strong> with the individual information type corresponding to that feature. </p>
+        <p>Drivers that work only with read-only data sources might not support those parts of the grammar included in this section that deal with changing data. An application can determine if a data source is read-only by calling <strong>SQLGetInfo</strong> with the SQL_DATA_SOURCE_READ_ONLY information type.</p>
+      </div>
+      <div xmlns="">
+        <div id="3cdde7f1-026a-4f1e-ae50-827cb0fa8483_h" class="LW_CollapsibleArea_TitleDiv">
+          <div>
+            <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse" id="3cdde7f1-026a-4f1e-ae50-827cb0fa8483" onclick="javascript:CA_Click(&#39;3cdde7f1-026a-4f1e-ae50-827cb0fa8483&#39;,&#39;Expand&#39;,&#39;Collapse&#39;)">
+              <img src="./SQL-Minimum-Grammar_files/030c41d9079671d09a62d8e2c1db6973.gif" border="0" class="cl_collapsiblearea_expand LW_CollapsibleArea_Img">
+              <span class="LW_CollapsibleArea_Title">Statement</span>
+            </a>
+            <div class="LW_CollapsibleArea_HrDiv">
+              <hr class="LW_CollapsibleArea_Hr">
+            </div>
+          </div>
+        </div>
+        <div class="sectionblock" id="3cdde7f1-026a-4f1e-ae50-827cb0fa8483_c">
+          <a id="sectionToggle0" xmlns="http://www.w3.org/1999/xhtml">
+  
+</a>
+<p xmlns="http://www.w3.org/1999/xhtml">
+  <em>create-table-statement</em> ::= </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CREATE TABLE <em>base-table-name</em> </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<em>column-identifier data-type</em> [<em>,column-identifier data-type</em>]...)</p>
+<div class="alert" xmlns="http://www.w3.org/1999/xhtml">
+  <table>
+    <tbody><tr>
+      <th>
+        
+        <img id="alert_caution" alt="Important note" src="./SQL-Minimum-Grammar_files/030c41d9079671d09a62d8e2c1db6973.gif" title="Important note" xmlns="" class="cl_IC46226">
+        <strong>Important</strong>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <p>As a <em>data-type</em> in a <em>create-table-statement</em>, applications must use a data type from the TYPE_NAME column of the result set returned by <strong>SQLGetTypeInfo</strong>.</p>
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+<p xmlns="http://www.w3.org/1999/xhtml">
+  <em>delete-statement-searched</em> ::= </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DELETE FROM <em>table-name</em> [WHERE <em>search-condition</em>]</p>
+<p xmlns="http://www.w3.org/1999/xhtml">
+  <em>drop-table-statement</em> ::= </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DROP TABLE <em>base-table-name</em></p>
+<p xmlns="http://www.w3.org/1999/xhtml">
+  <em>insert-statement</em> ::= </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSERT INTO <em>table-name</em> [( <em>column-identifier</em> [, <em>column-identifier</em>]...)] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VALUES (<em>insert-value</em>[, <em>insert-value</em>]... )</p>
+<p xmlns="http://www.w3.org/1999/xhtml">
+  <em>select-statement</em> ::= </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT [ALL | DISTINCT] <em>select-list</em> </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM <em>table-reference-list</em> </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[WHERE <em>search-condition</em>] </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<em>order-by-clause</em>]</p>
+<p xmlns="http://www.w3.org/1999/xhtml">
+  <em>statement</em> ::= <em>create-table-statement</em> </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <em>delete-statement-searched</em> </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <em>drop-table-statement</em> </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <em>insert-statement</em> </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <em>select-statement</em> </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <em>update-statement-searched</em></p>
+<p xmlns="http://www.w3.org/1999/xhtml">
+  <em>update-statement-searched</em> </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UPDATE <em>table-name</em> </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SET <em>column-identifier</em> = {<em>expression</em> | NULL } </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[, <em>column-identifier</em> = {<em>expression</em> | NULL}]... </p>
+<p xmlns="http://www.w3.org/1999/xhtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[WHERE <em>search-condition</em>]</p>
+<p xmlns="http://www.w3.org/1999/xhtml">This section contains the following topics.  </p>
+<ul xmlns="http://www.w3.org/1999/xhtml">
+  <li>
+    <p>
+      <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms713534(v=vs.85).aspx">Elements Used in SQL Statements</a>           </p>
+  </li>
+  <li>
+    <p>
+      <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms712598(v=vs.85).aspx">Data Type Support</a>           </p>
+  </li>
+  <li>
+    <p>
+      <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms716525(v=vs.85).aspx">Parameter Data Types</a>           </p>
+  </li>
+  <li>
+    <p>
+      <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms709310(v=vs.85).aspx">Parameter Markers</a>           </p>
+  </li>
+</ul></div>
+      </div>
+    </div>
+  </div>
+</div>   
+                
+                <div class="contentFeedbackContainer">
+                
+
+
+
+<div id="contentFeedback">
+    <form method="post" action="http://msdn.microsoft.com/en-us/library/windows/desktop/feedback/submit/ms711725(v=vs.85).aspx">
+    <div id="contentFeedbackContainer">
+        <div class="FeedbackTitleContainer">
+            <a name="feedback"></a>
+        Did you find this helpful?
+            <input id="rdIsUsefulYes" name="rdIsUseful" type="radio" value="1" onclick="toggleContentFeedback(&#39;Yes&#39;);"><label for="rdIsUsefulYes">Yes</label>
+            <input id="rdIsUsefulNo" name="rdIsUseful" type="radio" value="0" onclick="toggleContentFeedback(&#39;No&#39;);"><label for="rdIsUsefulNo">No</label>
+        
+        </div>
+        
+            <div id="contentFeedbackQAContainer">
+                
+                    <div id="feedbackListNoContainer" class="FeedbackListContainer">
+                        
+                            <div>
+                                <input id="chkbxNo201" name="chkbxNo" type="checkbox" value="201">
+                                <label for="chkbxNo201">Not accurate</label>
+                            </div>
+                        
+                            <div>
+                                <input id="chkbxNo202" name="chkbxNo" type="checkbox" value="202">
+                                <label for="chkbxNo202">Not enough depth</label>
+                            </div>
+                        
+                            <div>
+                                <input id="chkbxNo203" name="chkbxNo" type="checkbox" value="203">
+                                <label for="chkbxNo203">Need more code examples</label>
+                            </div>
+                        
+                    </div>
+                
+                <div class="FeedbackTellUsMoreContainer">
+                    <textarea id="feedbackText" name="feedbackText" class="TellUsMoreTextBoxSearchLoaded" onfocus="WatermarkFocus(this, &#39;Tell us more...&#39;, &#39;TellUsMoreTextBoxSearch&#39;)" onblur="WatermarkBlur(this, &#39;Tell us more...&#39;, &#39;TellUsMoreTextBoxSearchLoaded&#39;)" onkeydown="TextBoxCharactersCounter(this, document.getElementById(&#39;feedbackTextCounter&#39;), 1500)" onkeyup="TextBoxCharactersCounter(this, document.getElementById(&#39;feedbackTextCounter&#39;), 1500)">Tell us more...</textarea>
+                </div>
+                <span class="counter">(<span id="feedbackTextCounter">1500</span> characters remaining)</span>
+                <input type="hidden" id="returnUrl" name="returnUrl" value="http://msdn.microsoft.com/en-us/library/windows/desktop/ms711725(v=vs.85).aspx">
+                <input type="submit" id="submit" value="Submit" title="Click to Submit Feedback" onclick="WatermarkOnSubmit(document.getElementById(&#39;feedbackText&#39;), &#39;Tell us more...&#39;, &#39;TellUsMoreTextBoxSearch&#39;)">
+                <div style="clear: both;"></div>
+            </div>  
+        
+    </div>
+    </form>
+</div>
+
+                </div>
+                 
+          </div>
+          
+        </div>
+        <div class="footerContainer">
+            
+<div class="footer">
+    
+    <div class="blocks">
+        <div class="footerPrimaryBlock">
+            <div class="footerLinksTitles">Network sites</div>
+            <div style="padding-top: 5px; padding-bottom: 14px;"><a href="http://msdn.microsoft.com/" title="MSDN"><img alt="MSDN" class="footerLogoImage" src="./SQL-Minimum-Grammar_files/9fb7513b997d4c98cf5e8cd26eea2387.png"></a></div>
+            <div style="padding-bottom: 71px;">
+                <span class="footerLinks">
+                    
+                </span>
+            </div>
+        </div>
+        
+        <div class="footerSubBlock">&nbsp;</div><div class="footerSubBlock">
+            <div class="footerLinksTitles">Windows Dev Center</div>
+                <div style="padding-top: 5px;" class="footerLinks"><a href="http://msdn.microsoft.com/en-us/windows" title="Windows Dev Center home">Windows Dev Center home</a></div><div style="padding-top: 5px;" class="footerLinks"><a href="http://msdn.microsoft.com/en-us/windows/apps" title="Metro style apps">Metro style apps</a></div><div style="padding-top: 5px;" class="footerLinks"><a href="http://msdn.microsoft.com/en-us/ie" title="Internet Explorer">Internet Explorer</a></div><div style="padding-top: 5px;" class="footerLinks"><a href="http://msdn.microsoft.com/en-us/windows/desktop" title="Desktop">Desktop</a></div><div style="padding-top: 5px;" class="footerLinks"><a href="http://msdn.microsoft.com/en-us/windows/hardware" title="Hardware">Hardware</a></div>
+            </div>
+
+        <div class="footerFinalBlock">
+            <div class="footerLinksTitles">Other links</div><div style="padding-top: 5px;" class="footerLinks"><a href="http://msdn.microsoft.com/en-us/windows/desktop/aa905013" title="Support">Support</a></div><div style="padding-top: 5px;" class="footerLinks"><a href="https://connect.microsoft.com/dashboard/" title="Microsoft Connect">Microsoft Connect</a></div>
+        </div>
+    </div>
+    
+    <div class="footerMSLogo">
+        <div class="clip104x17">
+        <img src="./SQL-Minimum-Grammar_files/5b56267bbca66252c725ca7ab4fdea87.png" class="footerMsLogo" title="Microsoft" alt="Microsoft">
+        </div>
+    </div>
+    <div class="footerSubLinksContainer">
+        <div class="footerSubLinks">
+          <a href="http://msdn.microsoft.com/en-us/windows/desktop/cc300389" title="Terms of use">Terms of use</a>
+          <span class="footerSubLinksDivider">|</span>
+          <a href="http://www.microsoft.com/library/toolbar/3.0/trademarks/en-us.mspx" title="Trademarks">Trademarks</a>
+          <span class="footerSubLinksDivider">|</span>
+          <a href="http://www.microsoft.com/info/privacy.mspx" title="Privacy statement">Privacy statement</a>
+          <span class="footerSubLinksDivider">|</span>
+          <a href="https://lab.msdn.microsoft.com/mailform/contactus.aspx?refurl=%2fen-us%2flibrary%2fwindows%2fdesktop%2fms711725(v%3dvs.85).aspx" title="Site feedback" target="_blank" onclick="SiteFeedbackNewWindow(&#39;https://lab.msdn.microsoft.com/mailform/contactus.aspx?refurl=%2fen-us%2flibrary%2fwindows%2fdesktop%2fms711725(v%3dvs.85).aspx&#39;); return false;">Site feedback</a>
+          <span class="footerSubLinksDivider">|</span>
+          <a href="http://msdn.microsoft.com/en-us/windows/desktop/SelectLocale?fromPage=%2flibrary%2fwindows%2fdesktop%2fms711725.aspx" title="United States (English)">United States (English)</a>
+        </div>
+        <div class="footerCopyright" title="© 2012 Microsoft. All rights reserved.">© 2012 Microsoft. All rights reserved.</div>
+    </div>
+</div>
+
+        </div>
+    </div>
+<!--[CDATA[ Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft.  See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx. ]]-->
+<script type="text/javascript" src="./SQL-Minimum-Grammar_files/Combined.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+
+<script src="./SQL-Minimum-Grammar_files/broker-config.js"></script><div style="display: none; " id="_WEDCSInsertedData"><iframe id="_msnFrame" src="./SQL-Minimum-Grammar_files/Sync.htm" style="z-index:-1;height:1px;width:1px;display:none;visibility:hidden;" onload="javascript:MscomBeacon();"></iframe></div></body></html>
